@@ -1,0 +1,100 @@
+:root { 
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Reusables */
+.text-center {
+    text-align: center;
+}
+
+.container-1366 {
+    max-width: 136rem;
+}
+
+/* Grid Layout */
+.body-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25rem 1fr 1fr 1fr;
+    grid-template-rows: 5rem 8rem 1fr  5rem;
+    grid-template-areas:
+    "nav    nav    nav    nav"
+    "header header header header"
+    "aside  main   main   main"
+    "footer footer footer footer"
+    ;
+}
+
+/* Grid-Layout-Items */
+
+           /* NavBar */
+.nav-container {
+    background-color: aqua;
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container-logo h2{
+    margin: 0 0 0 2rem;
+}
+
+.nav-container-navs {
+    margin: 0 2rem 0 0 ;
+}
+
+.nav-container-navs {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-container-navs a {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+          /* Header */
+.header-container {
+    background-color: blue;
+    grid-area: header;
+}
+
+            /* Aside */
+.aside-container {
+    background-color: chartreuse;
+    grid-area: aside;
+    /* max-width: 30rem; */
+}
+
+
+            /* Main */
+.main-container {
+    background-color: darkgreen;
+    grid-area: main;
+}
+
+           /* Footer */
+.footer-container {
+    background-color: yellow;
+    grid-area: footer;
+}
