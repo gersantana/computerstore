@@ -5,33 +5,59 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./assets/css/normalize.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<title>E-comerce Grid</title>
 	</head>
 
-	<body class="body-container">
+	<body class="body-container" id="init">
 		<nav class="nav-container">
 			<div class="nav-container-logo">
-				<h2>Computer Store</h2>
+				<h2>Computer<span>STORE</span></h2>
 			</div>
 			<div class="nav-container-navs">
-				<a href="#">Inicio</a>
-				<a href="#">Categorias</a>
-				<a href="#">Productos</a>
-				<a href="#">Nosotros</a>
+				<a href="#init">Inicio</a>
+				<a href="#categ">Categorias</a>
+				<a href="#products">Productos</a>
+				<a href="#foot">Nosotros</a>
 			</div>
 		</nav>
 
-		<header class="header-container text-center">
-			<h1>Computer Store</h1>
+		<header id="categ" class="header-container text-center">
+			<h1>Computer<span>STORE</span></h1>
 			<p></p>
 		</header>
 
 		<aside class="aside-container">
-			<section class="categorias"></section>
+			<section class="categorias">
+				<h2>Categorias</h2>
+				<a href="">Laptops <span>(32)</span></a>
+				<a href="">Teclados <span>(20)</span></a>
+				<a href="">Monitores Gamers <span>(28)</span></a>
+				<a href="">Sillas <span>(15)</span></a>
+				<a href="">Escritorios <span>(24)</span></a>
+			</section>
+			<article class="informacion-extra">
+				<h2>Envios</h2>
+				<p><span>Envío Gratis:</span> ¡Disfruta del envío gratis en pedidos superiores a 20,000 CLP! Queremos premiar tu fidelidad y apreciamos tu preferencia.
+				 <br><br>
+				<span>Envíos a todo el país:</span> Nos enorgullece ofrecer envíos a todas las regiones y ciudades de nuestro país. No importa dónde te encuentres, 
+				</p>
+				<hr />
+				<h2>Metodos de pago</h2>
+				<p>En nuestra tienda en línea, nos esforzamos por ofrecerte opciones de pago seguras y convenientes:</p>
+				<ul>
+					<li>Tarjetas de debito/credito</li>
+					<li>Transferecias</li>
+					<li>Paypal</li>
+					<li>Efectivo</li>
+				</ul>
+			</article>
 		</aside>
 
-		<main class="main-container">
+		<main class="main-container" id="products">
 			<section class="cards-container text-center">
 				<div class="card-body">
 					<img src="./assets/imgs/monitor gamer 55.jpg" alt="imagen" />
@@ -84,6 +110,6 @@
 			</section>
 		</main>
 
-		<footer class="footer-container"></footer>
+		<footer class="footer-container" id="foot"></footer>
 	</body>
 </html>
